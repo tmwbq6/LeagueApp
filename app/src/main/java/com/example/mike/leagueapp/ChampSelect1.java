@@ -64,7 +64,7 @@ public class ChampSelect1 extends AppCompatActivity {
 
         StrictMode.setThreadPolicy(policy);                                                             // allows networking in main thread, I know, bad practices. but we must carry on for now
 
-        ApiConfig config = new ApiConfig().setKey("RGAPI-b1a866e0-f1f4-4961-b657-2787ebb94b97");        // API key, proabaly out of date at this point
+        ApiConfig config = new ApiConfig().setKey("<REPLACE WITH API KEY>");        // API key, proabaly out of date at this point
         RiotApi api = new RiotApi(config);
         // Get all champions and create thier champion objects add to array list, champid, name, title, q, w, e, r, passive
         ChampionList championList = api.getDataChampionList(Platform.NA, Locale.EN_US, null, false, ChampionListTags.ALL);
