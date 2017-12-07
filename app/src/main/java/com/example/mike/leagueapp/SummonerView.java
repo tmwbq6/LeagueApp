@@ -38,7 +38,7 @@ public class SummonerView extends AppCompatActivity {
         try {                                                                                               // this can fail, like for instance if my API key is outdated, so wrap in try/catch
 
 
-            ApiConfig config = new ApiConfig().setKey("RGAPI-b1a866e0-f1f4-4961-b657-2787ebb94b97");        // Riot Games will give anyone a restricted API key to mess around with
+            ApiConfig config = new ApiConfig().setKey("<REPLACE WITH API KEY>");        // Riot Games will give anyone a restricted API key to mess around with
             RiotApi api = new RiotApi(config);                                                              // bad news is the request limits are kinda low and they expire every 24 hours
 
 
