@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.leagueapp.activity_champ_select2">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.leagueapp.activity_champ_select2">
+
+    <ImageButton
+        android:id="@+id/jayceButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="Jayce"
+        android:onClick="shoJayce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jayceicon" />
+
+    <ImageButton
+        android:id="@+id/reksaiButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="jax"
+        android:onClick="shoJax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jaxicon" />
+
+    <ImageButton
+        android:id="@+id/jhinButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="jhin"
+        android:onClick="shoJhin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reksaiButton"
+        app:srcCompat="@drawable/jhinicon" />
+
+    <ImageButton
+        android:id="@+id/jinxButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="jinx"
+        android:onClick="showJinx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jayceButton"
+        app:srcCompat="@drawable/jinxicon" />
+
+    <ImageButton
+        android:id="@+id/kalistaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKalista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jhinButton"
+        app:srcCompat="@drawable/kalistaicon" />
+
+    <ImageButton
+        android:id="@+id/karmaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKarma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jinxButton"
+        app:srcCompat="@drawable/karmaicon" />
+
+    <ImageButton
+        android:id="@+id/karthusButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKarthus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kalistaButton"
+        app:srcCompat="@drawable/karthusicon" />
+
+    <ImageButton
+        android:id="@+id/kassadinButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKassadin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/karmaButton"
+        app:srcCompat="@drawable/kassadinicon" />
+
+    <ImageButton
+        android:id="@+id/katarinaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKatarina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/karthusButton"
+        app:srcCompat="@drawable/katarinaicon" />
+
+    <ImageButton
+        android:id="@+id/kayleButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKayle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kassadinButton"
+        app:srcCompat="@drawable/kayleicon" />
+
+    <ImageButton
+        android:id="@+id/kaynButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showKayn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/katarinaButton"
+        app:srcCompat="@drawable/kaynicon" />
+
+    <ImageButton
+        android:id="@+id/kennenButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showKennen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayleButton"
+        app:srcCompat="@drawable/kennenicon" />
+
+    <ImageButton
+        android:id="@+id/khazixButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaynButton"
+        app:srcCompat="@drawable/khazixicon" />
+
+    <ImageButton
+        android:id="@+id/kindredButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showKindred"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kennenButton"
+        app:srcCompat="@drawable/kindredicon" />
+
+    <ImageButton
+        android:id="@+id/kledButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showKled"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/khazixButton"
+        app:srcCompat="@drawable/kledicon" />
+
+    <ImageButton
+        android:id="@+id/kogmawButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="26dp"
+        android:onClick="showKog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kindredButton"
+        app:srcCompat="@drawable/kogmawicon" />
+
+    <ImageButton
+        android:id="@+id/leblancButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLeBlanc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kledButton"
+        app:srcCompat="@drawable/leblancicon" />
+
+    <ImageButton
+        android:id="@+id/leesinButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kogmawButton"
+        app:srcCompat="@drawable/leesinicon" />
+
+    <ImageButton
+        android:id="@+id/leonaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLeona"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leblancButton"
+        app:srcCompat="@drawable/leonaicon" />
+
+    <ImageButton
+        android:id="@+id/lissandraButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leesinButton"
+        app:srcCompat="@drawable/lissandraicon" />
+
+    <ImageButton
+        android:id="@+id/lucianButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLucian"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leonaButton"
+        app:srcCompat="@drawable/lucianicon" />
+
+    <ImageButton
+        android:id="@+id/luluButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLulu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lissandraButton"
+        app:srcCompat="@drawable/luluicon" />
+
+    <ImageButton
+        android:id="@+id/luxButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showLux"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lucianButton"
+        app:srcCompat="@drawable/luxicon" />
+
+    <ImageButton
+        android:id="@+id/malphiteButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMalphite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luluButton"
+        app:srcCompat="@drawable/malphiteicon" />
+
+    <ImageButton
+        android:id="@+id/malzaharButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMalzahar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luxButton"
+        app:srcCompat="@drawable/malzaharicon" />
+
+    <ImageButton
+        android:id="@+id/maokaiButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/malphiteButton"
+        app:srcCompat="@drawable/maokaiicon" />
+
+    <ImageButton
+        android:id="@+id/masteryiButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMasterYi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/malzaharButton"
+        app:srcCompat="@drawable/masteryiicon" />
+
+    <ImageButton
+        android:id="@+id/missfortuneButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMiss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maokaiButton"
+        app:srcCompat="@drawable/missfortuneicon" />
+
+    <ImageButton
+        android:id="@+id/mordekaiserButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMorde"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/masteryiButton"
+        app:srcCompat="@drawable/mordekaisericon" />
+
+    <ImageButton
+        android:id="@+id/morganaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showMorgana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/missfortuneButton"
+        app:srcCompat="@drawable/morganaicon" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showSelect1"
+        android:text="A - J"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rakanButton" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J - R"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintStart_toEndOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showSelect3"
+        android:text="R - Z"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/rammusButton" />
+
+    <ImageButton
+        android:id="@+id/namiButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNami"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mordekaiserButton"
+        app:srcCompat="@drawable/namiicon" />
+
+    <ImageButton
+        android:id="@+id/nasusButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNasus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morganaButton"
+        app:srcCompat="@drawable/nasusicon" />
+
+    <ImageButton
+        android:id="@+id/nautilusButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNautilus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namiButton"
+        app:srcCompat="@drawable/nautilusicon" />
+
+    <ImageButton
+        android:id="@+id/nidaleeButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNidalee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nasusButton"
+        app:srcCompat="@drawable/nidaleeicon" />
+
+    <ImageButton
+        android:id="@+id/nocturneButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNocturne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nautilusButton"
+        app:srcCompat="@drawable/nocturneicon" />
+
+    <ImageButton
+        android:id="@+id/nunuButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showNunu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nidaleeButton"
+        app:srcCompat="@drawable/nunuicon" />
+
+    <ImageButton
+        android:id="@+id/olafButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showOlaf"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nocturneButton"
+        app:srcCompat="@drawable/olaficon" />
+
+    <ImageButton
+        android:id="@+id/oriannaButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showOrianna"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nunuButton"
+        app:srcCompat="@drawable/oriannaicon" />
+
+    <ImageButton
+        android:id="@+id/ornnButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showOrnn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/olafButton"
+        app:srcCompat="@drawable/ornnicon" />
+
+    <ImageButton
+        android:id="@+id/pantheonButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showPantheon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oriannaButton"
+        app:srcCompat="@drawable/pantheonicon" />
+
+    <ImageButton
+        android:id="@+id/poppyButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showPoppy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ornnButton"
+        app:srcCompat="@drawable/poppyicon" />
+
+    <ImageButton
+        android:id="@+id/quinnButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showQuinn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pantheonButton"
+        app:srcCompat="@drawable/quinnicon" />
+
+    <ImageButton
+        android:id="@+id/rakanButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showRakan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/poppyButton"
+        app:srcCompat="@drawable/rakanicon" />
+
+    <ImageButton
+        android:id="@+id/rammusButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="28dp"
+        android:onClick="showRam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quinnButton"
+        app:srcCompat="@drawable/rammusicon" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

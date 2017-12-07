@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mike.leagueapp.ChampSelect1">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="6000dp"
+        tools:context="com.example.mike.leagueapp.ChampSelect1">
+
+        <ImageButton
+            android:id="@+id/annieButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="Annie's icon, click to go to her page"
+            android:onClick="showAnnie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/annieicon" />
+
+        <ImageButton
+            android:id="@+id/aatroxButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="aatrox's icon click to go to his page"
+            android:onClick="showAatrox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/aatroxicon" />
+
+        <ImageButton
+            android:id="@+id/ahriButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="Ahri Button click to go to her page"
+            android:onClick="showAhri"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aatroxButton"
+            app:srcCompat="@drawable/ahriicon" />
+
+        <ImageButton
+            android:id="@+id/akaliButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="akali button click to go to her page"
+            android:onClick="showAkali"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/annieButton"
+            app:srcCompat="@drawable/akaliicon" />
+
+        <ImageButton
+            android:id="@+id/alistarButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAlistar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ahriButton"
+            app:srcCompat="@drawable/alistaricon" />
+
+        <ImageButton
+            android:id="@+id/amumuButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAmumu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/akaliButton"
+            app:srcCompat="@drawable/amumuicon" />
+
+        <ImageButton
+            android:id="@+id/aniviaButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAnivia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alistarButton"
+            app:srcCompat="@drawable/aniviaicon" />
+
+        <ImageButton
+            android:id="@+id/asheButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAshe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amumuButton"
+            app:srcCompat="@drawable/ashiicon" />
+
+        <ImageButton
+            android:id="@+id/aurelionsolButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAurelion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aniviaButton"
+            app:srcCompat="@drawable/aurelionsolicon" />
+
+        <ImageButton
+            android:id="@+id/azirButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showAzir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asheButton"
+            app:srcCompat="@drawable/aziricon" />
+
+        <ImageButton
+            android:id="@+id/bardButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showBard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aurelionsolButton"
+            app:srcCompat="@drawable/bardicon" />
+
+        <ImageButton
+            android:id="@+id/brandButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showBrand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/azirButton"
+            app:srcCompat="@drawable/brandicon" />
+
+        <ImageButton
+            android:id="@+id/braumButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showBraum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bardButton"
+            app:srcCompat="@drawable/braumicon" />
+
+        <ImageButton
+            android:id="@+id/caitlynButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showCaitlyn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brandButton"
+            app:srcCompat="@drawable/caitlynicon" />
+
+        <ImageButton
+            android:id="@+id/camilleButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showCamille"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/braumButton"
+            app:srcCompat="@drawable/camilleicon" />
+
+        <ImageButton
+            android:id="@+id/cassiopeiaButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="26dp"
+            android:onClick="showCassiopeia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/caitlynButton"
+            app:srcCompat="@drawable/cassiopeiaicon" />
+
+        <ImageButton
+            android:id="@+id/chogathButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showCho"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/camilleButton"
+            app:srcCompat="@drawable/chogathicon" />
+
+        <ImageButton
+            android:id="@+id/corkiButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showCorki"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cassiopeiaButton"
+            app:srcCompat="@drawable/corkiicon" />
+
+        <ImageButton
+            android:id="@+id/dariusButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showDarius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chogathButton"
+            app:srcCompat="@drawable/dariusicon" />
+
+        <ImageButton
+            android:id="@+id/dianaButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showDiana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/corkiButton"
+            app:srcCompat="@drawable/dianaicon" />
+
+        <ImageButton
+            android:id="@+id/dravenButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showDraven"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dariusButton"
+            app:srcCompat="@drawable/dravenicon" />
+
+        <ImageButton
+            android:id="@+id/drmundoButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showDrM"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dianaButton"
+            app:srcCompat="@drawable/drmundoicon" />
+
+        <ImageButton
+            android:id="@+id/ekkoButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showEkko"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dravenButton"
+            app:srcCompat="@drawable/ekkoicon" />
+
+        <ImageButton
+            android:id="@+id/eliseButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showElise"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drmundoButton"
+            app:srcCompat="@drawable/eliseicon" />
+
+        <ImageButton
+            android:id="@+id/evelynnButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showEvelynn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ekkoButton"
+            app:srcCompat="@drawable/evelynnicon" />
+
+        <ImageButton
+            android:id="@+id/ezrealButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showEzreal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eliseButton"
+            app:srcCompat="@drawable/ezrealicon" />
+
+        <ImageButton
+            android:id="@+id/fiddlesticksButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showFiddlesticks"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/evelynnButton"
+            app:srcCompat="@drawable/fiddlesticksicon" />
+
+        <ImageButton
+            android:id="@+id/fioraButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showFiora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ezrealButton"
+            app:srcCompat="@drawable/fioraicon" />
+
+        <ImageButton
+            android:id="@+id/fizzButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showFizz"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiddlesticksButton"
+            app:srcCompat="@drawable/fizzicon" />
+
+        <ImageButton
+            android:id="@+id/galioButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGalio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fioraButton"
+            app:srcCompat="@drawable/galioicon" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:text="A - J"
+            app:layout_constraintEnd_toStartOf="@+id/button9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jannaButton" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="showSelect2"
+            android:text="J - R"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginStart="26dp"
+            android:onClick="showSelect3"
+            android:text="R - Z"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button9" />
+
+        <ImageButton
+            android:id="@+id/gangplankButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGangplank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fizzButton"
+            app:srcCompat="@drawable/gangplankicon" />
+
+        <ImageButton
+            android:id="@+id/garenButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGaren"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/galioButton"
+            app:srcCompat="@drawable/garenicon" />
+
+        <ImageButton
+            android:id="@+id/gnarButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGnar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gangplankButton"
+            app:srcCompat="@drawable/gnaricon" />
+
+        <ImageButton
+            android:id="@+id/gragasButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGragas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/garenButton"
+            app:srcCompat="@drawable/gragasicon" />
+
+        <ImageButton
+            android:id="@+id/gravesButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showGraves"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gnarButton"
+            app:srcCompat="@drawable/gravesicon" />
+
+        <ImageButton
+            android:id="@+id/hecarimButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showHecarim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gragasButton"
+            app:srcCompat="@drawable/hecarimicon" />
+
+        <ImageButton
+            android:id="@+id/heimerdingerButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showHeimerdinger"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gravesButton"
+            app:srcCompat="@drawable/heimerdingericon" />
+
+        <ImageButton
+            android:id="@+id/illoaiButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showIllaoi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hecarimButton"
+            app:srcCompat="@drawable/illaoiicon" />
+
+        <ImageButton
+            android:id="@+id/ireliaButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showIrelia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heimerdingerButton"
+            app:srcCompat="@drawable/ireliaicon" />
+
+        <ImageButton
+            android:id="@+id/ivernButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showIvern"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/illoaiButton"
+            app:srcCompat="@drawable/ivernicon" />
+
+        <ImageButton
+            android:id="@+id/jannaButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="showJanna"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ireliaButton"
+            app:srcCompat="@drawable/jannaicon" />
+
+        <ImageButton
+            android:id="@+id/jarvenivButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="28dp"
+            android:onClick="shoJarvan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivernButton"
+            app:srcCompat="@drawable/jarvanivicon" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
